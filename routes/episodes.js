@@ -7,6 +7,6 @@ router.get('/', (req, res) => {
 })
 // getting one episode
 router.get('/:id', (req, res) => {
-  req.params.id
+  res.send(req.params.id)
 })
 module.exports = router

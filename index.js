@@ -10,6 +10,7 @@ db.once('open', () => console.log('connected to db'))
 app.use(express.json())
 const episodesRouter = require('./routes/episodes')
 app.use('/', episodesRouter)
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
   console.log('I was in the pool! I WAS IN THE POOL!')
 })

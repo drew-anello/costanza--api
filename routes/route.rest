@@ -2,3 +2,15 @@ GET http://localhost:3000/
 
 ###
 GET http://localhost:3000/13
+
+###
+
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "quote": "Oh, yeah? Well, the jerk store called. They're running out of you!",
+    "name": "George", 
+    "season": 8, 
+    "episode": 13
+}
